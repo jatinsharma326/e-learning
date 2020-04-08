@@ -1,0 +1,17 @@
+$vieport:2.5vw;
+
+
+.bg {
+    background-image: url("https://images.unsplash.com/photo-1550376026-33cbee34f79e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1652&q=80");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .vwa{
+    font-size: $vieport;
+    
+  }
+  .cover{
+    padding:200px 0px 0px 80px;
+  }
