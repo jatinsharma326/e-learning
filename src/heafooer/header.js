@@ -3,7 +3,7 @@ import './header.scss';
 import { Component } from 'react';
 import { Navbar,Nav } from 'react-bootstrap';
 import { Button } from '@material-ui/core';
-
+import {Link} from 'react-router-dom';
 
 class Header extends Component{
     
@@ -16,12 +16,12 @@ class Header extends Component{
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                        <Nav.Link href="*">Home</Nav.Link>
+                       <Link to = {"/"} style = {{textDecoration:'none'}}> <Nav.Link href="*">Home</Nav.Link></Link>
                         <Nav.Link href="*">Tuts</Nav.Link>
                         </Nav>
                         <Nav>
-                        <Button Link to = "/login" variant="contained" color='primary'>Login</Button>&nbsp;&nbsp;
-                        <Button variant="contained" color='secondary'>SingUp</Button>
+                       <Link  to = {"/login"} style={{ textDecoration: 'none' }} > <Button variant="contained"  color='primary'>Login</Button></Link>&nbsp;&nbsp;
+                        <Link  to = {"/register"} style={{ textDecoration: 'none' }} ><Button variant="contained" color='secondary'>SingUp</Button></Link>
                         </Nav>
                     </Navbar.Collapse>
                   </Navbar>
